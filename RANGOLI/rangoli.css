@@ -1,0 +1,170 @@
+body{
+  background-color:#4d4c54;
+}
+.rangoli-wrapper{
+        position: absolute;
+/*         transform: rotate3d(1, 0, 0, 55deg); */
+        width: 53px;
+        height: 55px;
+        margin: 0px 5px;
+    }
+    .rangoli{
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border-bottom: 2px solid yellow;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+    .rangoli:before {
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        border-bottom: 2px solid orangered;
+        top: -25px;
+        right: 25px;
+    }
+    .rangoli:after {
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        border-bottom: 2px solid orangered;
+        left: 25px;
+        top: -25px;
+    }
+    .rangoli-design{
+        width: 2px;
+        height: 20px;
+        background-color: blue;
+        position: absolute;
+        top: -10px;
+        left: 24px;
+    }
+    .rangoli-design:before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        position: absolute;
+        border-radius: 50%;
+        left: -4px;
+        top: -9px;
+    }
+    .medium-design-right{
+        transform: rotate(60deg);
+        left: 30px;
+        top: -10px;
+        height: 12px;
+        position: absolute;
+    }
+    .medium-design-left{
+        transform: rotate(-60deg);
+        left: 18px;
+        top: -10px;
+        height: 12px;
+        position: absolute;
+    }
+    .large-design-right{
+        transform: rotate(75deg);
+        left: 33px;
+        top: -4px;
+        position: absolute;
+    }
+    .large-design-left{
+        transform: rotate(-75deg);
+        left: 14px;
+        top: -4px;
+        position: absolute;
+    }
+    .inside-design{
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        position: absolute;
+        left: 20px;
+        bottom: 21px;
+        border-radius: 50%;
+        border: 1px solid blueviolet;
+    }
+    .inside-design:before {
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        position: absolute;
+        content: "";
+        left: 0px;
+        transform: rotate(-25deg);
+        border-top: 2px solid #fff;
+        border-radius: 50%;
+        bottom: -10px;
+    }
+    .inside-design::after {
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        position: absolute;
+        content: "";
+        left: -17px;
+        transform: rotate(26deg);
+        border-top: 2px solid #fff;
+        border-radius: 50%;
+        bottom: -10px;
+    }
+*, *:before, *:after {
+    box-sizing: border-box;
+    position: relative;
+}
+.rangoli-main-wrapper {
+    width: 200px;
+    height: 200px;
+    background: saddlebrown;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.rangoli-main-wrapper:after {
+    content: '*';
+    position: absolute;
+    color:red;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(7);
+    /* font-size: 8em; */
+}
+.rangoli-main-wrapper > .rangoli-wrapper:nth-child(1) {
+    /* background: red; */
+    left: 50%;
+    transform: translate(-50%);
+    top: 11%;
+}
+.rangoli-main-wrapper > .rangoli-wrapper:nth-child(2) {
+left: 71%;
+    transform: translate(-50%) rotate(70deg);
+    top: 29%;
+}
+.rangoli-main-wrapper > .rangoli-wrapper:nth-child(3) {
+       left: 61%;
+    transform: translate(-50%) rotate(-200deg);
+    top: 56%;
+}
+.rangoli-main-wrapper > .rangoli-wrapper:nth-child(4) {
+    left: 30%;
+    transform: translate(-50%) rotate(200deg);
+    top: 54%;
+}
+.rangoli-main-wrapper > .rangoli-wrapper:nth-child(5) {
+        left: 24%;
+    transform: translate(-50%) rotate(-70deg);
+    top: 26%;
+}
+
+
